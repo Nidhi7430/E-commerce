@@ -1,8 +1,16 @@
 *{box-sizing: border-box;padding: 0;margin: 0;}
 .wrapper{max-width: 1200px;padding: 0 50px;width: 100%;margin: 0 auto;}
-a{display: inline-block;}
+a{display: inline-block;text-decoration: none;}
 ul{list-style: none;}
-ul li a{text-decoration: none;}
+.col-6{width: 50%;padding:0 15px;float: left;}
+.clearfix{clear: both;margin: 0 -15px;overflow: auto;}
+img{width: 100%;height: 100%;}
+.btn_org a{color: #ffffff;background-color: #fe7865;font-size: 18px;padding:10px 40px;border: 1px solid #fe7865;position: relative;line-height: 18px;}
+.btn_org a::before{content: url("../image/btn_arrow.png");position: absolute;right: 21px;top: 38%;transform: translateY(-50%);width:10px;height: 10px;}
+.btn_org a:hover{background-color: #ffffff;color: #fe7865;}
+.btn_org a:hover::before{content: url("../image/btn_arrow_hover.png");}
+
+
 
 .head_top{display: flex;align-items: center;padding: 30px 0;}
 .logo{display: inline-block;}
@@ -12,3 +20,22 @@ ul li a{text-decoration: none;}
 .menu ul li a:hover{color: #fe7865;}
 .menu ul li:last-child{padding-right: 0;} 
 .menu ul li{display: inline-block;padding: 0 8px;}
+
+
+.discount_product_img{position: relative;overflow: hidden;}
+.discount_product_text{position: absolute;top: 0;left: 0;padding:35px 25px;}
+.discount_product_text h3{font-size: 30px;line-height: 40px;color: #333333;padding-bottom: 20px;}
+.discount_product_text a{color: #777777;font-size: 18px;font-weight: 600;position: relative;}
+.discount_product_text a::before{position: absolute;top: 0;right: -15px;content:url("../image/right-arrow.png");width: 10px;height:10px;}
+.discount_product_text a:hover{color: #fe7865;}
+.discount_product_text a:hover::before{content: url("../image/right-arrow-hover.png");}
+.discount_product_img:hover img{transform: scale(1.2);transition: all 0.4s ease-in-out;}
+
+
+#service{background: #fffaf6;}
+.service_top{padding: 100px 0 60px;}
+.service_title h4{color: #fe7865;position: relative;font-size: 24px;font-weight: 500;padding-left: 100px;}
+.service_title h4::before{position: absolute;left: 0;top: 50%;transform: translateY(-50%);background-color: #fe7865;content: "";width: 90px;height: 2px;}
+.service_title h2{font-size: 32px;color: #333333;font-weight: 600;margin: 17px 0;}
+.service_title p{font-size: 18px;font-weight: 400;color: #777777;line-height: 26px;}
+.service_bottom_img{padding: 0 0 30px;}
