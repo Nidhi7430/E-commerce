@@ -268,10 +268,13 @@ p {
   border: 1px solid #fe7865;
   border-radius: 50px;
   background: #ffe8e5;
+  display: inline-block;
+  padding: 8px 14px;
 }
 .team_col_social ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 10px;
+  vertical-align: -webkit-baseline-middle;
 }
 .team_col_img {
   width: 80px;
@@ -848,4 +851,49 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.team_col_social ul li a {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.team_col_social .team_fb a::before {
+  content: "";
+  position: absolute;
+  background: url(../image/facebook.png);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.team_col_social .team_twitter a::before {
+  content: "";
+  position: absolute;
+  background: url(../image/twitter.png);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.team_col_social .team_insta a::before {
+  content: "";
+  position: absolute;
+  background: url(../image/insta.png);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.team_col_social .team_fb a:hover::before {
+  background: url(../image/banner_fb.png);
+}
+.team_col_social .team_insta a:hover::before {
+  background: url(../image/banner_insta.png);
+}
+.team_col_social .team_twitter a:hover::before {
+  background: url(../image/banner_twitter.png);
 }
