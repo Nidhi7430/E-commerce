@@ -32,3 +32,23 @@ $(document).ready(function(){
       fixedContentPos: false
     });
   });
+
+  $(document).ready(function(){
+    $('.collection_slider_main').slick({
+      slidesToShow:3,
+    });
+  });
+
+  $(document).ready(function(){
+	
+    $('ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+  
+      $('ul.tabs li').removeClass('current');
+      $('.collection_slider').removeClass('current');
+  
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    })
+  
+  })
